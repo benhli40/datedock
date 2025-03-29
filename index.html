@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DateDock – Weekly Task Manager</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>DateDock</h1>
+    <p>Your lightweight weekly scheduler</p>
+    <div style="margin-top: 1rem;">
+      <button id="toggle-theme">Toggle Dark Mode</button>
+      <button id="clear-tasks">Clear Week</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Dynamic 7-day grid will be injected here -->
+    <div id="calendar" class="calendar-grid"></div>
+  </main>
+
+  <footer style="margin-top: 2rem; text-align: center; font-size: 0.85rem;">
+    <p>© 2025 Benjamin Liles · DateDock – Plan your week, your way.</p>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="js/calendar.js"></script>
+  <script src="js/tasks.js"></script>
+  <script src="js/dragdrop.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
