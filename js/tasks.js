@@ -22,8 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
 function createTaskElement(text) {
   const li = document.createElement('li');
   li.className = 'task';
-  li.textContent = text;
 
+  // Create checkbox
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.className = 'task-checkbox';
+  checkbox.addEventListener('change', () => {
+    if (checkbox.checked) {
+      alert("✅ This task is done.");
+    }
+  });
+
+  // Create task label
+  const span = document.createElement('span');
+  span.textContent = text;
+
+  // Delete button
   const delBtn = document.createElement('button');
   delBtn.textContent = '🗑';
   delBtn.className = 'delete-task';
@@ -32,8 +46,10 @@ function createTaskElement(text) {
     saveAllTasks();
   });
 
-  li.appendChild(delBtn);
-  makeTaskDraggable(li); // defined in dragdrop.js
+  // Append all elements
+  li.append(checkbox, span, delBtn);
+  makeTaskDraggable(li); // your existing drag/drop function
+
   return li;
 }
 

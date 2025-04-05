@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const daysContainer = document.getElementById('calendar');
-  const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
   weekdays.forEach(day => {
     const column = document.createElement('div');
