@@ -1,6 +1,8 @@
+// calendar.js
+const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
 document.addEventListener('DOMContentLoaded', () => {
-  const daysContainer = document.getElementById('calendar');
-  const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  const calendar = document.getElementById('calendar');
 
   weekdays.forEach(day => {
     const column = document.createElement('div');
@@ -14,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <button class="add-task-btn" data-day="${day}">Add</button>
     `;
 
-    daysContainer.appendChild(column);
+    calendar.appendChild(column);
   });
 });
+

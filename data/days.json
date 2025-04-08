@@ -1,9 +1,8 @@
 {
-  "Monday": ["Check email", "Team meeting @ 10am", "Lunch with Alex"],
-  "Tuesday": ["Code review", "Write blog post", "Grocery run"],
-  "Wednesday": ["Doctor appointment", "Finish mockups"],
-  "Thursday": ["Standup call", "Fix bug #42"],
-  "Friday": ["Plan next sprint", "Demo to product team"],
-  "Saturday": ["Clean apartment", "Read a book"],
-  "Sunday": ["Family brunch", "Relax and recharge"]
+  "Monday": [],
+  "Tuesday": ["6:15a - 1015a : Pers. Shop."],
+  "Wednesday": ["6a - 10a : Pers. Shop."],
+  "Friday": [],
+  "Saturday": ["5:15a - 10:15a : Pers. Shop."],
+  "Sunday": []
 }
